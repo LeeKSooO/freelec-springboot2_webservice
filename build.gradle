@@ -28,10 +28,12 @@ dependencies {
     compile('org.projectlombok:lombok')
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
     compile('com.h2database:h2')
-    testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile('org.springframework.boot:spring-boot-starter-test') // 사실 스프링 이니셜라이져로 프로젝트를 생성한 경우
+    // Dependency에서부터 거의 설정을 따로 해줄 것이 없는데 그건 "spring-boot-starter-test" 때문이다
     compile('org.springframework.boot:spring-boot-starter-mustache')
     compile('org.springframework.boot:spring-boot-starter-oauth2-client')
     compile('org.springframework.session:spring-session-jdbc')
+    compile("org.mariadb.jdbc:mariadb-java-client")
 }
 
 
